@@ -1,0 +1,30 @@
+<!--Html javascript code to validity check alphabet-->
+<html>
+<head>
+<title>Alphabet Check</title>
+</head>
+<body>
+<label for="num">Enter a text</label>
+
+<input id="text">
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+
+<script>
+function myFunction() {
+    var x, word;
+    // Get the value of the input field with id="numb"
+    x = document.getElementById("text").value;
+
+    if (!x.match(/^[a-zA-Z]+$/)) {
+        word = "Input not valid";
+    } else {
+        word = "Input OK";
+    }
+    alert(word);
+}
+</script>
+
+</body>
+</html> 
