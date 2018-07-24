@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>Conditional Operator</title>
+</head>
+<body>
+<input id="mark">
+<button onclick="result()">Submit</button>
+<p id="demo"></p>
+<script>
+function result(){
+var mark,status;
+mark=document.getElementById("mark");
+result=(mark > 50)?"Pass":"Fail";
+document.getElementById("demo").innerHTML =alert( "Result="+status);
+}
+</script>
+</body>
+</html>
